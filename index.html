@@ -1,27 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>San Diego Top Spots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Top Spots | Visit California</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>San Diego Top Spots</h1>
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Beaches</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Attractions</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#" class="filter-toggle">Filter <span class="filter-icon">▼</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Filter Panel (initially hidden) -->
+<div class="filter-panel">
+    <div class="container">
+    <div class="filter-options">
+    <h3>Filter Top Spots</h3>
+    <div class="filter-categories">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+    <button class="filter-btn" data-filter="food">Food & Drink</button>
+    <button class="filter-btn" data-filter="culture">Arts & Culture</button>
+    <button class="filter-btn" data-filter="family">Family Friendly</button>
+        <button class="filter-btn" data-filter="entertainment">Entertainment</button>
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody id="table-body">
-            <!-- Table rows will be inserted here dynamically -->
-        </tbody>
-    </table>
+            <!-- Category Information Section -->
+            <div class="category-info">
+                <div class="category-description active" id="all-info">
+                    <h4>All San Diego Top Spots</h4>
+                    <p>Discover the best of San Diego with our complete guide to the city's top attractions, dining, and entertainment options.</p>
+                </div>
+                <div class="category-description" id="outdoor-info">
+                    <h4>Outdoor Adventures</h4>
+                    <p>From breathtaking beaches to serene hiking trails, San Diego offers endless opportunities to enjoy the perfect Southern California weather and natural beauty.</p>
+                </div>
+                <div class="category-description" id="food-info">
+                    <h4>Food & Drink</h4>
+                    <p>Savor San Diego's diverse culinary scene, from farm-to-table restaurants and craft breweries to international cuisine and farmers markets.</p>
+                </div>
+                <div class="category-description" id="culture-info">
+                    <h4>Arts & Culture</h4>
+                    <p>Immerse yourself in San Diego's rich cultural heritage through museums, historic sites, art galleries, and vibrant neighborhood experiences.</p>
+                </div>
+                <div class="category-description" id="family-info">
+                    <h4>Family Friendly</h4>
+                    <p>Create lasting memories with attractions and activities perfect for visitors of all ages, from world-famous theme parks to interactive museums.</p>
+                </div>
+                <div class="category-description" id="entertainment-info">
+                    <h4>Entertainment</h4>
+                    <p>Experience San Diego's exciting entertainment options, including live music venues, theaters, sporting events, and unique nightlife spots.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <header class="hero">
+        <div class="hero-content">
+            <h1>San Diego Top Spots</h1>
+            <p class="hero-description">Discover the best attractions and hidden gems in America's Finest City</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Explore San Diego</h2>
+            <p>From beautiful beaches and scenic hiking trails to world-class attractions and vibrant neighborhoods, San
+                Diego offers something for everyone. Use this guide to discover the top spots that locals and visitors
+                love.</p>
+        </section>
+
+        <section class="spots-container">
+            <!-- Spots will be dynamically added here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Visit California. Part of the Golden State experience.</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/main.js"></script>

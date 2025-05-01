@@ -3,7 +3,8 @@
     "version": "0.1.0",
     "scripts": {
         "test": "mocha --exit",
-        "start": "http-server"
+        "start": "http-server",
+        "dev": "browser-sync start --server --files 'index.html, assets/**/*.css, assets/**/*.js'"
     },
     "dependencies": {
         "chai": "^4.0.2",
@@ -15,6 +16,7 @@
         "nightmare": "^2.10.0"
     },
     "devDependencies": {
+        "browser-sync": "^2.29.3",
         "http-server": "^14.1.1"
     }
 }
